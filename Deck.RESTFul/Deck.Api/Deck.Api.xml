@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Deck.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Deck.Api.Controllers.DeckController">
+            <summary>
+            Deck manage controller
+            </summary>
+        </member>
+        <member name="T:Deck.Api.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="M:Deck.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Default ctor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Deck.Api.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:Deck.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+        </member>
+        <member name="M:Deck.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure App
+            </summary>
+        </member>
+    </members>
+</doc>
