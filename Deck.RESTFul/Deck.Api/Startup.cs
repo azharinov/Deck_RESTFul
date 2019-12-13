@@ -1,3 +1,4 @@
+using Deck.Api.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,10 @@ namespace Deck.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddHateoas();
+
+            services.AddCustomServices(Configuration);
 
             services.AddSwaggerGen(c =>
             {

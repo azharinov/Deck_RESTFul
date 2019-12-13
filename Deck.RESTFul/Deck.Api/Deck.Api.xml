@@ -6,7 +6,68 @@
     <members>
         <member name="T:Deck.Api.Controllers.DeckController">
             <summary>
-            Deck manage controller
+            Контроллер управления колодами.
+            </summary>
+        </member>
+        <member name="T:Deck.Api.Controllers.MainController">
+            <summary>
+            Базовый контроллер приложения
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Controllers.MainController.Services">
+            <summary>
+            Доступные сервисы.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Controllers.MainController.Mapper">
+            <summary>
+            Маппер моделей ответов.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Controllers.MainController.LinksService">
+            <summary>
+            Сервис добавления ссылок Hateoas.
+            </summary>
+        </member>
+        <member name="M:Deck.Api.Controllers.MainController.#ctor(Deck.Logic.Services.Services,Deck.Api.Models.ResponseMapper,RiskFirst.Hateoas.ILinksService)">
+            <summary>
+            Конструктор по умолчанию.
+            </summary>
+        </member>
+        <member name="T:Deck.Api.Controllers.ShuffleController">
+            <summary>
+            Контроллер тасования колод.
+            </summary>
+        </member>
+        <member name="T:Deck.Api.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Resource.DeckAlreadyExists">
+            <summary>
+              Looks up a localized string similar to &quot;Колода с именем {0} уже существует&quot;.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Resource.DeckNotFound">
+            <summary>
+              Looks up a localized string similar to &quot;Колода с именем {0} не найдена&quot;.
+            </summary>
+        </member>
+        <member name="P:Deck.Api.Resource.MultiplyDeckNames">
+            <summary>
+              Looks up a localized string similar to &quot;Найдено более одной колоды с именем {0}&quot;.
             </summary>
         </member>
         <member name="T:Deck.Api.Startup">
